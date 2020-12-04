@@ -1,11 +1,10 @@
 <template>
-    <v-container class="d-flex flex-column align-center">
+    <v-container class="d-flex flex-column align-center justify-center mb-4">
         <v-text-field
+            
+            class="text-center"
             v-model="sequencia"
-            label="Sequência">
-
-        </v-text-field>
-        
+            label="Sequência" />        
 
         <div>
             <div>
@@ -22,7 +21,7 @@
 <script>
 export default {
     data: () => ({
-        sequencia: "8,9,1",
+        sequencia: "",
         solution: []
     }),
     computed: {
@@ -43,13 +42,21 @@ export default {
         calculaMaiorSubsequencia(sequencia) {
             sequencia = this.formatSequencia(sequencia)
 
+            if (!sequencia) return 0;
+
+
             const input_lst = sequencia
-            const temp_lst = new Array(sequencia.length)
-            const predecessores = new Array(sequencia.length)
+            const temp_lst = sequencia.map(item => {
+                console.log(item)
+                return 1
+            })
+            const predecessores = sequencia.map((item, index) => {
+                console.log(item)
+                return index
+            })
 
             for (let i = 0; i < sequencia.length; i++) {
-                temp_lst[i] = 1
-                predecessores[i] = 0
+
 
                 for (let j = 0; j < i; j++) {
                     if (+input_lst[j] < +input_lst[i] && ((1 + +temp_lst[j]) > +temp_lst[i])) {
@@ -71,7 +78,6 @@ export default {
 
             let j = 0
             j = temp_lst.findIndex(elem => elem == Math.max(...temp_lst))
-            debugger
             this.solution.push(sequencia[j])
             while(j != predecessores[j] ) {
                 j = predecessores[j]
@@ -90,3 +96,13 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.v-input {
+    width: 100%;
+
+    input {
+        text-align: center;
+    }
+}
+</style>

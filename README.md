@@ -14,6 +14,12 @@ Tema:
 ## Sobre 
 O projeto MSC Renderer tem por objetivo mostrar a maior subsequência crescente de uma sequência de forma fácil e simples através de uma aplicação web. Para isso é utilizado Programação dinâmica.
 
+Obs.: Nós também resolvemos o problema [URI 2919](https://www.urionlinejudge.com.br/judge/en/problems/view/2919) sobre esse assunto. Os códigos em Python ([main.py](https://github.com/projeto-de-algoritmos/PD_MSC_Renderer/blob/master/main.py)) e em C ([best_order.c](https://github.com/projeto-de-algoritmos/PD_MSC_Renderer/blob/master/best_order.c))<br>
+estão disponíveis nessa página.
+
+**Linguagem**: **JavaScript**<br>
+**Framework**: **VueJS**
+
 ## Screenshots
 
 ![](images/1.png)
@@ -26,14 +32,14 @@ O projeto MSC Renderer tem por objetivo mostrar a maior subsequência crescente 
 ### Requisitos para utilizar esse projeto
 
 - conexão de internet;<br>
-- navegador web de escolha livre (__não usar o safari__);<br>
+- navegador web de escolha livre ;<br>
 - terminal/console/shell no computador;<br>
 - npm;<br>
 - clonar o projeto;
 
 > Para clonar o projeto digite:
 
-    git clone TODO
+    git clone https://github.com/projeto-de-algoritmos/PD_MSC_Renderer.git
 
 
 ### Instalando o frontend
@@ -66,7 +72,7 @@ Você pode assistir o vídeo a seguir para entender como utilizar
 o projeto.
 
 - Download na pasta `images/Como usar o projeto .mp4` ou
-- Assista pelo YouTube: TODO
+- Assista pelo YouTube: [https://youtu.be/96jxTkvwqss](https://youtu.be/96jxTkvwqss)
 
 1. Abra o navegador web de sua escolha;<br>
 2. Digite na barra de busca o endereço informado pelo frontend (por padrão `http://localhost:8080/` caso você não tenha nenhuma outra aplicação utilizando essa porta);

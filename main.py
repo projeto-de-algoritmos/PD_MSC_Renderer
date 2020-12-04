@@ -5,7 +5,7 @@ def main():
 
             input_lst = list(map(float, input().split(" ")))
             temp_lst = [0 for _ in range(n)]
-            predecessores = [0 for _ in range(n)]
+            predecessores = [n for n in range(n)]
 
             for index, item in enumerate(input_lst):
                 temp_lst[index] = 1
